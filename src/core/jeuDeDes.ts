@@ -21,6 +21,10 @@ export class JeuDeDes {
      *  opérations systèmes (du DSS), responsabilités données aux contrôleur GRASP
      */
 
+    public redemarrerJeu(){
+        this._joueurs.clear()
+    }
+
     public demarrerJeu(nom: string): string {
 
         if (this._joueurs.get(nom)) {
